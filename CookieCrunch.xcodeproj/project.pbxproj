@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB937AB11B6B7D210085FD26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB01B6B7D210085FD26 /* AppDelegate.swift */; };
+		FB937AB31B6B7D210085FD26 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB937AB21B6B7D210085FD26 /* GameScene.sks */; };
+		FB937AB51B6B7D210085FD26 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB41B6B7D210085FD26 /* GameScene.swift */; };
+		FB937AB71B6B7D210085FD26 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB61B6B7D210085FD26 /* GameViewController.swift */; };
+		FB937ABA1B6B7D210085FD26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB937AB81B6B7D210085FD26 /* Main.storyboard */; };
+		FB937ABC1B6B7D210085FD26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB937ABB1B6B7D210085FD26 /* Images.xcassets */; };
+		FB937ABF1B6B7D210085FD26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB937ABD1B6B7D210085FD26 /* LaunchScreen.xib */; };
+		FB937ACB1B6B7D220085FD26 /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937ACA1B6B7D220085FD26 /* CookieCrunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB937AC51B6B7D220085FD26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB937AA31B6B7D210085FD26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB937AAA1B6B7D210085FD26;
+			remoteInfo = CookieCrunch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB937AAB1B6B7D210085FD26 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB937AAF1B6B7D210085FD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB937AB01B6B7D210085FD26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB937AB21B6B7D210085FD26 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FB937AB41B6B7D210085FD26 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FB937AB61B6B7D210085FD26 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB937AB91B6B7D210085FD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB937ABB1B6B7D210085FD26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB937ABE1B6B7D210085FD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FB937AC41B6B7D220085FD26 /* CookieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB937AC91B6B7D220085FD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB937ACA1B6B7D220085FD26 /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB937AA81B6B7D210085FD26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB937AC11B6B7D220085FD26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB937AA21B6B7D210085FD26 = {
+			isa = PBXGroup;
+			children = (
+				FB937AAD1B6B7D210085FD26 /* CookieCrunch */,
+				FB937AC71B6B7D220085FD26 /* CookieCrunchTests */,
+				FB937AAC1B6B7D210085FD26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB937AAC1B6B7D210085FD26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB937AAB1B6B7D210085FD26 /* CookieCrunch.app */,
+				FB937AC41B6B7D220085FD26 /* CookieCrunchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB937AAD1B6B7D210085FD26 /* CookieCrunch */ = {
+			isa = PBXGroup;
+			children = (
+				FB937AB01B6B7D210085FD26 /* AppDelegate.swift */,
+				FB937AB21B6B7D210085FD26 /* GameScene.sks */,
+				FB937AB41B6B7D210085FD26 /* GameScene.swift */,
+				FB937AB61B6B7D210085FD26 /* GameViewController.swift */,
+				FB937AB81B6B7D210085FD26 /* Main.storyboard */,
+				FB937ABB1B6B7D210085FD26 /* Images.xcassets */,
+				FB937ABD1B6B7D210085FD26 /* LaunchScreen.xib */,
+				FB937AAE1B6B7D210085FD26 /* Supporting Files */,
+			);
+			path = CookieCrunch;
+			sourceTree = "<group>";
+		};
+		FB937AAE1B6B7D210085FD26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB937AAF1B6B7D210085FD26 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB937AC71B6B7D220085FD26 /* CookieCrunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB937ACA1B6B7D220085FD26 /* CookieCrunchTests.swift */,
+				FB937AC81B6B7D220085FD26 /* Supporting Files */,
+			);
+			path = CookieCrunchTests;
+			sourceTree = "<group>";
+		};
+		FB937AC81B6B7D220085FD26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB937AC91B6B7D220085FD26 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB937AAA1B6B7D210085FD26 /* CookieCrunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB937ACE1B6B7D220085FD26 /* Build configuration list for PBXNativeTarget "CookieCrunch" */;
+			buildPhases = (
+				FB937AA71B6B7D210085FD26 /* Sources */,
+				FB937AA81B6B7D210085FD26 /* Frameworks */,
+				FB937AA91B6B7D210085FD26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookieCrunch;
+			productName = CookieCrunch;
+			productReference = FB937AAB1B6B7D210085FD26 /* CookieCrunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB937AC31B6B7D220085FD26 /* CookieCrunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB937AD11B6B7D220085FD26 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */;
+			buildPhases = (
+				FB937AC01B6B7D220085FD26 /* Sources */,
+				FB937AC11B6B7D220085FD26 /* Frameworks */,
+				FB937AC21B6B7D220085FD26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB937AC61B6B7D220085FD26 /* PBXTargetDependency */,
+			);
+			name = CookieCrunchTests;
+			productName = CookieCrunchTests;
+			productReference = FB937AC41B6B7D220085FD26 /* CookieCrunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB937AA31B6B7D210085FD26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ichimura Yuichi";
+				TargetAttributes = {
+					FB937AAA1B6B7D210085FD26 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FB937AC31B6B7D220085FD26 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = FB937AAA1B6B7D210085FD26;
+					};
+				};
+			};
+			buildConfigurationList = FB937AA61B6B7D210085FD26 /* Build configuration list for PBXProject "CookieCrunch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB937AA21B6B7D210085FD26;
+			productRefGroup = FB937AAC1B6B7D210085FD26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB937AAA1B6B7D210085FD26 /* CookieCrunch */,
+				FB937AC31B6B7D220085FD26 /* CookieCrunchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB937AA91B6B7D210085FD26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB937ABF1B6B7D210085FD26 /* LaunchScreen.xib in Resources */,
+				FB937ABC1B6B7D210085FD26 /* Images.xcassets in Resources */,
+				FB937AB31B6B7D210085FD26 /* GameScene.sks in Resources */,
+				FB937ABA1B6B7D210085FD26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB937AC21B6B7D220085FD26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB937AA71B6B7D210085FD26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB937AB51B6B7D210085FD26 /* GameScene.swift in Sources */,
+				FB937AB71B6B7D210085FD26 /* GameViewController.swift in Sources */,
+				FB937AB11B6B7D210085FD26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB937AC01B6B7D220085FD26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB937ACB1B6B7D220085FD26 /* CookieCrunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB937AC61B6B7D220085FD26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB937AAA1B6B7D210085FD26 /* CookieCrunch */;
+			targetProxy = FB937AC51B6B7D220085FD26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB937AB81B6B7D210085FD26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB937AB91B6B7D210085FD26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB937ABD1B6B7D210085FD26 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB937ABE1B6B7D210085FD26 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB937ACC1B6B7D220085FD26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB937ACD1B6B7D220085FD26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB937ACF1B6B7D220085FD26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookieCrunch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB937AD01B6B7D220085FD26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookieCrunch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB937AD21B6B7D220085FD26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookieCrunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
+			};
+			name = Debug;
+		};
+		FB937AD31B6B7D220085FD26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookieCrunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB937AA61B6B7D210085FD26 /* Build configuration list for PBXProject "CookieCrunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB937ACC1B6B7D220085FD26 /* Debug */,
+				FB937ACD1B6B7D220085FD26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB937ACE1B6B7D220085FD26 /* Build configuration list for PBXNativeTarget "CookieCrunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB937ACF1B6B7D220085FD26 /* Debug */,
+				FB937AD01B6B7D220085FD26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB937AD11B6B7D220085FD26 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB937AD21B6B7D220085FD26 /* Debug */,
+				FB937AD31B6B7D220085FD26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB937AA31B6B7D210085FD26 /* Project object */;
+}
