@@ -1,25 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LVB-YS-i5n">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="CtS-rA-C9T">
             <objects>
-                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
-                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
-                    </layoutGuides>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="CookieCrunch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TLI-rV-c6K">
+                                <rect key="frame" x="0.0" y="20" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B6J-OA-hy5">
+                                <rect key="frame" x="16" y="20" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XoN-mp-NeR">
+                                <rect key="frame" x="16" y="50" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7yn-La-BnD">
+                                <rect key="frame" x="120" y="20" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhe-9n-iFB">
+                                <rect key="frame" x="120" y="50" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v5a-12-Kbj">
+                                <rect key="frame" x="224" y="20" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hA8-qx-ORT">
+                                <rect key="frame" x="224" y="50" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="igD-9a-qVh">
+                                <rect key="frame" x="0.0" y="209" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="guf-Ht-goj">
+                                <rect key="frame" x="110" y="474" width="100" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Shuffle" backgroundImage="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="Ic3-4z-Gcl"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MGh-Xt-Qzk">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="adBanner" destination="MGh-Xt-Qzk" id="6MS-Ae-rAL"/>
+                        <outlet property="gameOverPanel" destination="igD-9a-qVh" id="jp7-ZP-Eda"/>
+                        <outlet property="movesLabel" destination="bhe-9n-iFB" id="U9g-jJ-yjC"/>
+                        <outlet property="scoreLabel" destination="hA8-qx-ORT" id="c3l-fq-CKI"/>
+                        <outlet property="shuffleButton" destination="guf-Ht-goj" id="S7J-ji-YuK"/>
+                        <outlet property="targetLabel" destination="XoN-mp-NeR" id="mEF-Aw-HAs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="234" y="234"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button" width="100" height="36"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
