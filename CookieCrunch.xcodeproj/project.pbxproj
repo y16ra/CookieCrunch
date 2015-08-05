@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB75B14D1B6C91090033275B /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1471B6C91090033275B /* Chomp.wav */; };
+		FB75B14E1B6C91090033275B /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1481B6C91090033275B /* Drip.wav */; };
+		FB75B14F1B6C91090033275B /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1491B6C91090033275B /* Error.wav */; };
+		FB75B1501B6C91090033275B /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B14A1B6C91090033275B /* Ka-Ching.wav */; };
+		FB75B1511B6C91090033275B /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB75B14B1B6C91090033275B /* Mining by Moonlight.mp3 */; };
+		FB75B1521B6C91090033275B /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B14C1B6C91090033275B /* Scrape.wav */; };
+		FB75B1541B6C91810033275B /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75B1531B6C91810033275B /* Chain.swift */; };
+		FB75B1561B6F6E930033275B /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1551B6F6E930033275B /* Grid.atlas */; };
+		FB75B1681B6F76E90033275B /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1631B6F76E90033275B /* Level_0.json */; };
+		FB75B1691B6F76E90033275B /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1641B6F76E90033275B /* Level_1.json */; };
+		FB75B16A1B6F76E90033275B /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1651B6F76E90033275B /* Level_2.json */; };
+		FB75B16B1B6F76E90033275B /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1661B6F76E90033275B /* Level_3.json */; };
+		FB75B16C1B6F76E90033275B /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1671B6F76E90033275B /* Level_4.json */; };
+		FB75B16E1B7058E90033275B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB75B16D1B7058E90033275B /* iAd.framework */; };
+		FB75B1701B719C7F0033275B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FB75B16F1B719C7F0033275B /* .gitignore */; };
 		FB937AB11B6B7D210085FD26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB01B6B7D210085FD26 /* AppDelegate.swift */; };
-		FB937AB31B6B7D210085FD26 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB937AB21B6B7D210085FD26 /* GameScene.sks */; };
 		FB937AB51B6B7D210085FD26 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB41B6B7D210085FD26 /* GameScene.swift */; };
 		FB937AB71B6B7D210085FD26 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB61B6B7D210085FD26 /* GameViewController.swift */; };
 		FB937ABA1B6B7D210085FD26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB937AB81B6B7D210085FD26 /* Main.storyboard */; };
 		FB937ABC1B6B7D210085FD26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB937ABB1B6B7D210085FD26 /* Images.xcassets */; };
 		FB937ABF1B6B7D210085FD26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB937ABD1B6B7D210085FD26 /* LaunchScreen.xib */; };
 		FB937ACB1B6B7D220085FD26 /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937ACA1B6B7D220085FD26 /* CookieCrunchTests.swift */; };
+		FB937AD51B6B7DCE0085FD26 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB937AD41B6B7DCE0085FD26 /* Sprites.atlas */; };
+		FB937AD71B6B81DC0085FD26 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AD61B6B81DC0085FD26 /* Cookie.swift */; };
+		FB937AD91B6B82F80085FD26 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AD81B6B82F80085FD26 /* Array2D.swift */; };
+		FB937ADB1B6B831F0085FD26 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937ADA1B6B831F0085FD26 /* Level.swift */; };
+		FB937AE81B6B879E0085FD26 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AE71B6B879E0085FD26 /* Tile.swift */; };
+		FB937AEA1B6B87D70085FD26 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AE91B6B87D70085FD26 /* Extensions.swift */; };
+		FB937AEC1B6C4BB20085FD26 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AEB1B6C4BB20085FD26 /* Swap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB75B1471B6C91090033275B /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		FB75B1481B6C91090033275B /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		FB75B1491B6C91090033275B /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		FB75B14A1B6C91090033275B /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		FB75B14B1B6C91090033275B /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		FB75B14C1B6C91090033275B /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		FB75B1531B6C91810033275B /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		FB75B1551B6F6E930033275B /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		FB75B1631B6F76E90033275B /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		FB75B1641B6F76E90033275B /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		FB75B1651B6F76E90033275B /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		FB75B1661B6F76E90033275B /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		FB75B1671B6F76E90033275B /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		FB75B16D1B7058E90033275B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		FB75B16F1B719C7F0033275B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FB937AAB1B6B7D210085FD26 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB937AAF1B6B7D210085FD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB937AB01B6B7D210085FD26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB937AB21B6B7D210085FD26 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FB937AB41B6B7D210085FD26 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FB937AB61B6B7D210085FD26 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FB937AB91B6B7D210085FD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +75,13 @@
 		FB937AC41B6B7D220085FD26 /* CookieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB937AC91B6B7D220085FD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB937ACA1B6B7D220085FD26 /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
+		FB937AD41B6B7DCE0085FD26 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		FB937AD61B6B81DC0085FD26 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		FB937AD81B6B82F80085FD26 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		FB937ADA1B6B831F0085FD26 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		FB937AE71B6B879E0085FD26 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		FB937AE91B6B87D70085FD26 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FB937AEB1B6C4BB20085FD26 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB75B16E1B7058E90033275B /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +103,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB75B1461B6C91090033275B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB75B1471B6C91090033275B /* Chomp.wav */,
+				FB75B1481B6C91090033275B /* Drip.wav */,
+				FB75B1491B6C91090033275B /* Error.wav */,
+				FB75B14A1B6C91090033275B /* Ka-Ching.wav */,
+				FB75B14B1B6C91090033275B /* Mining by Moonlight.mp3 */,
+				FB75B14C1B6C91090033275B /* Scrape.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FB75B1621B6F76E90033275B /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FB75B1631B6F76E90033275B /* Level_0.json */,
+				FB75B1641B6F76E90033275B /* Level_1.json */,
+				FB75B1651B6F76E90033275B /* Level_2.json */,
+				FB75B1661B6F76E90033275B /* Level_3.json */,
+				FB75B1671B6F76E90033275B /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
 		FB937AA21B6B7D210085FD26 = {
 			isa = PBXGroup;
 			children = (
+				FB75B16F1B719C7F0033275B /* .gitignore */,
+				FB75B16D1B7058E90033275B /* iAd.framework */,
 				FB937AAD1B6B7D210085FD26 /* CookieCrunch */,
 				FB937AC71B6B7D220085FD26 /* CookieCrunchTests */,
 				FB937AAC1B6B7D210085FD26 /* Products */,
@@ -82,12 +152,22 @@
 			isa = PBXGroup;
 			children = (
 				FB937AB01B6B7D210085FD26 /* AppDelegate.swift */,
-				FB937AB21B6B7D210085FD26 /* GameScene.sks */,
 				FB937AB41B6B7D210085FD26 /* GameScene.swift */,
+				FB75B1531B6C91810033275B /* Chain.swift */,
 				FB937AB61B6B7D210085FD26 /* GameViewController.swift */,
+				FB937AD61B6B81DC0085FD26 /* Cookie.swift */,
+				FB937AD81B6B82F80085FD26 /* Array2D.swift */,
+				FB937ADA1B6B831F0085FD26 /* Level.swift */,
+				FB937AE71B6B879E0085FD26 /* Tile.swift */,
+				FB937AE91B6B87D70085FD26 /* Extensions.swift */,
+				FB937AEB1B6C4BB20085FD26 /* Swap.swift */,
 				FB937AB81B6B7D210085FD26 /* Main.storyboard */,
 				FB937ABB1B6B7D210085FD26 /* Images.xcassets */,
+				FB75B1621B6F76E90033275B /* Levels */,
+				FB937AD41B6B7DCE0085FD26 /* Sprites.atlas */,
+				FB75B1551B6F6E930033275B /* Grid.atlas */,
 				FB937ABD1B6B7D210085FD26 /* LaunchScreen.xib */,
+				FB75B1461B6C91090033275B /* Sounds */,
 				FB937AAE1B6B7D210085FD26 /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -199,9 +279,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB937ABF1B6B7D210085FD26 /* LaunchScreen.xib in Resources */,
+				FB75B16A1B6F76E90033275B /* Level_2.json in Resources */,
+				FB75B14E1B6C91090033275B /* Drip.wav in Resources */,
+				FB75B1561B6F6E930033275B /* Grid.atlas in Resources */,
+				FB75B1701B719C7F0033275B /* .gitignore in Resources */,
+				FB75B14F1B6C91090033275B /* Error.wav in Resources */,
+				FB75B16B1B6F76E90033275B /* Level_3.json in Resources */,
+				FB75B1521B6C91090033275B /* Scrape.wav in Resources */,
+				FB75B16C1B6F76E90033275B /* Level_4.json in Resources */,
+				FB75B14D1B6C91090033275B /* Chomp.wav in Resources */,
+				FB75B1511B6C91090033275B /* Mining by Moonlight.mp3 in Resources */,
+				FB75B1691B6F76E90033275B /* Level_1.json in Resources */,
 				FB937ABC1B6B7D210085FD26 /* Images.xcassets in Resources */,
-				FB937AB31B6B7D210085FD26 /* GameScene.sks in Resources */,
+				FB75B1501B6C91090033275B /* Ka-Ching.wav in Resources */,
 				FB937ABA1B6B7D210085FD26 /* Main.storyboard in Resources */,
+				FB75B1681B6F76E90033275B /* Level_0.json in Resources */,
+				FB937AD51B6B7DCE0085FD26 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB937ADB1B6B831F0085FD26 /* Level.swift in Sources */,
 				FB937AB51B6B7D210085FD26 /* GameScene.swift in Sources */,
+				FB937AD71B6B81DC0085FD26 /* Cookie.swift in Sources */,
+				FB937AEA1B6B87D70085FD26 /* Extensions.swift in Sources */,
+				FB937AE81B6B879E0085FD26 /* Tile.swift in Sources */,
+				FB75B1541B6C91810033275B /* Chain.swift in Sources */,
 				FB937AB71B6B7D210085FD26 /* GameViewController.swift in Sources */,
 				FB937AB11B6B7D210085FD26 /* AppDelegate.swift in Sources */,
+				FB937AD91B6B82F80085FD26 /* Array2D.swift in Sources */,
+				FB937AEC1B6C4BB20085FD26 /* Swap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +517,7 @@
 				FB937AD01B6B7D220085FD26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB937AD11B6B7D220085FD26 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +526,7 @@
 				FB937AD31B6B7D220085FD26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
