@@ -24,6 +24,9 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     var score = 0
     var currentLevel = 0
     
+    // ステージを増やしたら値を変更する必要がある
+    let MAX_LEVEL = 4
+    
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var movesLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -177,7 +180,11 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         shuffleButton.hidden = true
         
         // next level
-        currentLevel++
+        if currentLevel == MAX_LEVEL {
+            currentLevel = 0    // 全部クリアしたら最初から
+        } else {
+            currentLevel++
+        }
         level = Level(filename: "Level_" + String(currentLevel))
         scene.level = level
         scene.removeAllTiles()
