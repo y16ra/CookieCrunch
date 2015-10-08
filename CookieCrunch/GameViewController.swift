@@ -51,7 +51,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         //skView.showsNodeCount = true
         
         // Show iAd Banner
-        //self.canDisplayBannerAds = true
+        self.canDisplayBannerAds = true
         self.adBanner.delegate = self
         self.adBanner.hidden = true
         
@@ -116,9 +116,6 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         if level.isPossibleSwap(swap) {
             level.performSwap(swap)
             scene.animateSwap(swap, completion: handleMatches)
-//            scene.animateSwap(swap) {
-//                self.view.userInteractionEnabled = true
-//            }
         } else {
             scene.animateInvalidSwap(swap) {
                 self.view.userInteractionEnabled = true
