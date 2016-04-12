@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import iAd
+import TwitterKit
 
 extension SKNode {
 }
@@ -35,7 +36,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     var tapGestureRecognizer: UITapGestureRecognizer!
     
     @IBOutlet weak var shuffleButton: UIButton!
-    @IBAction func shuffleButtonPressed(AnyObject) {
+    @IBAction func shuffleButtonPressed(_: AnyObject) {
         shuffle()
         decrementMoves()
     }
@@ -43,21 +44,38 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let logInButton = TWTRLogInButton { (session, error) in
+//            if let unwrappedSession = session {
+//                let alert = UIAlertController(title: "Logged In",
+//                    message: "User \(unwrappedSession.userName) has logged in",
+//                    preferredStyle: UIAlertControllerStyle.Alert
+//                )
+//                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+//                self.presentViewController(alert, animated: true, completion: nil)
+//            } else {
+//                NSLog("Login error: %@", error!.localizedDescription);
+//            }
+//        }
+//        // TODO: Change where the log in button is positioned in your view
+//        logInButton.center = self.view.center
+//        self.view.addSubview(logInButton)
+        
         // Configure the view.
-        let skView = view as! SKView
+        //let skView = view as! SKView
+        let skView = originalContentView as! SKView
         skView.multipleTouchEnabled = false
         //for Dubug
         //skView.showsFPS = true
         //skView.showsNodeCount = true
         
         // Show iAd Banner
-        self.canDisplayBannerAds = true
+        //self.canDisplayBannerAds = true
         self.adBanner.delegate = self
         self.adBanner.hidden = true
         
         // Create and configure the scene.
-        scene = GameScene(size: skView.bounds.size)
-        //scene = GameScene(size: skView.frame.size)
+        //scene = GameScene(size: skView.bounds.size)
+        scene = GameScene(size: skView.frame.size)
         scene.scaleMode = .AspectFill
         level = Level(filename: "Level_" + String(currentLevel))
         scene.level = level
@@ -93,11 +111,11 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> Int {
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
+            return UIInterfaceOrientationMask.AllButUpsideDown
         } else {
-            return Int(UIInterfaceOrientationMask.All.rawValue)
+            return UIInterfaceOrientationMask.All
         }
     }
 
@@ -160,7 +178,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         scoreLabel.text = String(format: "%ld", score)
     }
     func decrementMoves() {
-        --movesLeft
+        movesLeft -= 1
         updateLabels()
         if score >= level.targetScore {
             gameOverPanel.image = UIImage(named: "LevelComplete")
@@ -180,7 +198,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         if currentLevel == MAX_LEVEL {
             currentLevel = 0    // 全部クリアしたら最初から
         } else {
-            currentLevel++
+            currentLevel += 1
         }
         level = Level(filename: "Level_" + String(currentLevel))
         scene.level = level
@@ -188,7 +206,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         scene.addTiles()
 
         scene.animateGameOver() {
-            self.tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "hideGameOver")
+            self.tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(GameViewController.hideGameOver))
             self.view.addGestureRecognizer(self.tapGestureRecognizer)
         }
     }

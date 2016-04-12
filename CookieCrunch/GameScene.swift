@@ -157,9 +157,9 @@ class GameScene: SKScene {
         }
     }
 
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // 1
-        let touch = touches.first as! UITouch
+        let touch = touches.first!
         let location = touch.locationInNode(cookiesLayer)
         // 2
         let (success, column, row) = convertPoint(location)
@@ -184,12 +184,12 @@ class GameScene: SKScene {
         }
     }
 
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // 1
         if swipeFromColumn == nil { return }
         
         // 2
-        let touch = touches.first as! UITouch
+        let touch = touches.first!
         let location = touch.locationInNode(cookiesLayer)
         
         let (success, column, row) = convertPoint(location)
@@ -228,7 +228,7 @@ class GameScene: SKScene {
         if let toCookie = level.cookieAtColumn(toColumn, row: toRow) {
             if let fromCookie = level.cookieAtColumn(swipeFromColumn!, row: swipeFromRow!) {
                 // 4
-                println("*** swapping \(fromCookie) with \(toCookie)")
+                print("*** swapping \(fromCookie) with \(toCookie)")
                 if let handler = swipeHandler {
                     let swap = Swap(cookieA: fromCookie, cookieB: toCookie)
                     handler(swap)
@@ -322,7 +322,7 @@ class GameScene: SKScene {
         // 1
         var longestDuration: NSTimeInterval = 0
         for array in columns {
-            for (idx, cookie) in enumerate(array) {
+            for (idx, cookie) in array.enumerate() {
                 let newPosition = pointForColumn(cookie.column, row: cookie.row)
                 // 2
                 let delay = 0.05 + 0.15*NSTimeInterval(idx)
@@ -352,7 +352,7 @@ class GameScene: SKScene {
             // 2
             let startRow = array[0].row + 1
             
-            for (idx, cookie) in enumerate(array) {
+            for (idx, cookie) in array.enumerate() {
                 // 3
                 let sprite = SKSpriteNode(imageNamed: cookie.cookieType.spriteName)
                 sprite.position = pointForColumn(cookie.column, row: startRow)
@@ -424,7 +424,7 @@ class GameScene: SKScene {
         tilesLayer.removeAllChildren()
     }
 
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         swipeFromColumn = nil
         swipeFromRow = nil
         if selectionSprite.parent != nil && swipeFromColumn != nil {
@@ -432,7 +432,7 @@ class GameScene: SKScene {
         }
     }
     
-    override func touchesCancelled(touches: Set<NSObject>, withEvent event: UIEvent) {
-        touchesEnded(touches, withEvent: event)
+    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+        touchesEnded(touches!, withEvent: event)
     }
 }

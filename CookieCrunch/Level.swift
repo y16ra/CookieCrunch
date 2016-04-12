@@ -28,11 +28,11 @@ class Level {
             // 2
             if let tilesArray: AnyObject = dictionary["tiles"] {
                 // 3
-                for (row, rowArray) in enumerate(tilesArray as! [[Int]]) {
+                for (row, rowArray) in (tilesArray as! [[Int]]).enumerate() {
                     // 4
                     let tileRow = NumRows - row - 1
                     // 5
-                    for (column, value) in enumerate(rowArray) {
+                    for (column, value) in rowArray.enumerate() {
                         if value == 1 {
                             tiles[column, tileRow] = Tile()
                         }
@@ -59,10 +59,10 @@ class Level {
     
     func shuffle() -> Set<Cookie> {
         var set: Set<Cookie>
-        do {
+        repeat {
             set = createInitialCookies()
             detectPossibleSwaps()
-            println("possible swaps: \(possibleSwaps)")
+            print("possible swaps: \(possibleSwaps)")
         }
         while possibleSwaps.count == 0
         
@@ -82,7 +82,7 @@ class Level {
                     // 2
                     //var cookieType = CookieType.random()
                     var cookieType: CookieType
-                    do {
+                    repeat {
                         // generate a new random cookie type
                         cookieType = CookieType.random()
                     }
@@ -196,8 +196,8 @@ class Level {
         let horizontalChains = detectHorizontalMatches()
         let verticalChains = detectVerticalMatches()
         
-        println("Horizontal matches: \(horizontalChains)")
-        println("Vertical matches: \(verticalChains)")
+        print("Horizontal matches: \(horizontalChains)")
+        print("Vertical matches: \(verticalChains)")
         removeCookies(horizontalChains)
         removeCookies(verticalChains)
         
@@ -221,7 +221,7 @@ class Level {
                         cookies[column + 2, row]?.cookieType == matchType {
                             // 5
                             let chain = Chain(chainType: .Horizontal)
-                            do {
+                            repeat {
                                 chain.addCookie(cookies[column, row]!)
                                 ++column
                             }
@@ -250,7 +250,7 @@ class Level {
                         cookies[column, row + 2]?.cookieType == matchType {
                             
                             let chain = Chain(chainType: .Vertical)
-                            do {
+                            repeat {
                                 chain.addCookie(cookies[column, row]!)
                                 ++row
                             }
@@ -317,7 +317,7 @@ class Level {
                 if tiles[column, row] != nil {
                     // 3
                     var newCookieType: CookieType
-                    do {
+                    repeat {
                         newCookieType = CookieType.random()
                     } while newCookieType == cookieType
                     cookieType = newCookieType

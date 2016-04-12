@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Swap: Printable, Hashable {
+struct Swap: CustomStringConvertible, Hashable {
     let cookieA: Cookie
     let cookieB: Cookie
     
