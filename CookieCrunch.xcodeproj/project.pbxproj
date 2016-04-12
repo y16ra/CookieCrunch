@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1BD9861CB78083003F3EC7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1BD9821CB78083003F3EC7 /* Fabric.framework */; };
+		FB1BD9871CB78083003F3EC7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1BD9831CB78083003F3EC7 /* TwitterKit.framework */; };
+		FB1BD9881CB78083003F3EC7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB1BD9841CB78083003F3EC7 /* TwitterKitResources.bundle */; };
+		FB1BD9891CB78083003F3EC7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1BD9851CB78083003F3EC7 /* TwitterCore.framework */; };
+		FB1BD98B1CB787BF003F3EC7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1BD98A1CB787BF003F3EC7 /* Crashlytics.framework */; };
 		FB75B14D1B6C91090033275B /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1471B6C91090033275B /* Chomp.wav */; };
 		FB75B14E1B6C91090033275B /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1481B6C91090033275B /* Drip.wav */; };
 		FB75B14F1B6C91090033275B /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1491B6C91090033275B /* Error.wav */; };
@@ -22,6 +27,7 @@
 		FB75B16C1B6F76E90033275B /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1671B6F76E90033275B /* Level_4.json */; };
 		FB75B16E1B7058E90033275B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB75B16D1B7058E90033275B /* iAd.framework */; };
 		FB75B1701B719C7F0033275B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FB75B16F1B719C7F0033275B /* .gitignore */; };
+		FB75B1721B71A1F20033275B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB75B1711B71A1F20033275B /* LICENSE */; };
 		FB937AB11B6B7D210085FD26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB01B6B7D210085FD26 /* AppDelegate.swift */; };
 		FB937AB51B6B7D210085FD26 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB41B6B7D210085FD26 /* GameScene.swift */; };
 		FB937AB71B6B7D210085FD26 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB61B6B7D210085FD26 /* GameViewController.swift */; };
@@ -49,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB1BD9821CB78083003F3EC7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		FB1BD9831CB78083003F3EC7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		FB1BD9841CB78083003F3EC7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		FB1BD9851CB78083003F3EC7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		FB1BD98A1CB787BF003F3EC7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FB75B1471B6C91090033275B /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
 		FB75B1481B6C91090033275B /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
 		FB75B1491B6C91090033275B /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 		FB75B1671B6F76E90033275B /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 		FB75B16D1B7058E90033275B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FB75B16F1B719C7F0033275B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FB75B1711B71A1F20033275B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FB937AAB1B6B7D210085FD26 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB937AAF1B6B7D210085FD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB937AB01B6B7D210085FD26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +102,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB75B16E1B7058E90033275B /* iAd.framework in Frameworks */,
+				FB1BD98B1CB787BF003F3EC7 /* Crashlytics.framework in Frameworks */,
+				FB1BD9891CB78083003F3EC7 /* TwitterCore.framework in Frameworks */,
+				FB1BD9861CB78083003F3EC7 /* Fabric.framework in Frameworks */,
+				FB1BD9871CB78083003F3EC7 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,11 +147,17 @@
 		FB937AA21B6B7D210085FD26 = {
 			isa = PBXGroup;
 			children = (
-				FB75B16F1B719C7F0033275B /* .gitignore */,
-				FB75B16D1B7058E90033275B /* iAd.framework */,
 				FB937AAD1B6B7D210085FD26 /* CookieCrunch */,
 				FB937AC71B6B7D220085FD26 /* CookieCrunchTests */,
+				FB1BD9821CB78083003F3EC7 /* Fabric.framework */,
+				FB1BD9831CB78083003F3EC7 /* TwitterKit.framework */,
+				FB1BD9841CB78083003F3EC7 /* TwitterKitResources.bundle */,
+				FB1BD9851CB78083003F3EC7 /* TwitterCore.framework */,
+				FB75B16F1B719C7F0033275B /* .gitignore */,
+				FB75B16D1B7058E90033275B /* iAd.framework */,
+				FB1BD98A1CB787BF003F3EC7 /* Crashlytics.framework */,
 				FB937AAC1B6B7D210085FD26 /* Products */,
+				FB75B1711B71A1F20033275B /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +210,7 @@
 				FB937AC81B6B7D220085FD26 /* Supporting Files */,
 			);
 			path = CookieCrunchTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		FB937AC81B6B7D220085FD26 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -208,6 +230,7 @@
 				FB937AA71B6B7D210085FD26 /* Sources */,
 				FB937AA81B6B7D210085FD26 /* Frameworks */,
 				FB937AA91B6B7D210085FD26 /* Resources */,
+				FB1BD9811CB7803D003F3EC7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,11 +265,14 @@
 		FB937AA31B6B7D210085FD26 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Ichimura Yuichi";
 				TargetAttributes = {
 					FB937AAA1B6B7D210085FD26 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B2VWTGP5M8;
 					};
 					FB937AC31B6B7D220085FD26 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -284,8 +310,10 @@
 				FB75B1561B6F6E930033275B /* Grid.atlas in Resources */,
 				FB75B1701B719C7F0033275B /* .gitignore in Resources */,
 				FB75B14F1B6C91090033275B /* Error.wav in Resources */,
+				FB75B1721B71A1F20033275B /* LICENSE in Resources */,
 				FB75B16B1B6F76E90033275B /* Level_3.json in Resources */,
 				FB75B1521B6C91090033275B /* Scrape.wav in Resources */,
+				FB1BD9881CB78083003F3EC7 /* TwitterKitResources.bundle in Resources */,
 				FB75B16C1B6F76E90033275B /* Level_4.json in Resources */,
 				FB75B14D1B6C91090033275B /* Chomp.wav in Resources */,
 				FB75B1511B6C91090033275B /* Mining by Moonlight.mp3 in Resources */,
@@ -306,6 +334,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB1BD9811CB7803D003F3EC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 6f5eaf3b913b969fa888e5a88721d6ea5d19a667 75d9a39a30f823f2a1e5a343ffe12010de3f2fa2040e5c3173fa1999c0b4d8a3";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB937AA71B6B7D210085FD26 /* Sources */ = {
@@ -384,6 +428,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -448,9 +493,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CookieCrunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.monasan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e4c1ae8a-39cf-4b94-972d-00c34201204f";
 			};
 			name = Debug;
 		};
@@ -458,9 +511,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CookieCrunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.monasan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e4c1ae8a-39cf-4b94-972d-00c34201204f";
 			};
 			name = Release;
 		};
@@ -478,6 +539,7 @@
 				);
 				INFOPLIST_FILE = CookieCrunchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.monasan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
 			};
@@ -493,6 +555,7 @@
 				);
 				INFOPLIST_FILE = CookieCrunchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.monasan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunch.app/CookieCrunch";
 			};
